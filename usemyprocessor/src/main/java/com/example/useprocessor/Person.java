@@ -15,6 +15,6 @@ public class Person {
     public static void main(String[] args) {
         System.out.println("==");
         Person zq = new Person("zq");
-        System.out.println(zq.getName());
+//        System.out.println(zq.getName());
     }
 }
