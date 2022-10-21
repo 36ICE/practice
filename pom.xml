@@ -21,6 +21,7 @@
         <module>mynetty</module>
         <module>myspark</module>
         <module>myrocketmq</module>
+        <module>myelasticsearch</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
