@@ -22,6 +22,7 @@
         <module>myspark</module>
         <module>myrocketmq</module>
         <module>myelasticsearch</module>
+        <module>mytimingwheel</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
