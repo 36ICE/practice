@@ -23,6 +23,7 @@
         <module>myrocketmq</module>
         <module>myelasticsearch</module>
         <module>mytimingwheel</module>
+        <module>myspringcloud</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->

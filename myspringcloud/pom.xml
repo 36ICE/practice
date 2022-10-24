@@ -9,14 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>myjava</artifactId>
+    <artifactId>myspringcloud</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>myjavaagent</module>
-        <module>agentmain</module>
-        <module>myattach</module>
-        <module>mymq</module>
-        <module>mylock</module>
+        <module>sentinel-service</module>
+        <module>openfeign-service</module>
     </modules>
 
     <properties>
@@ -24,4 +21,17 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.5.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-starters</artifactId>
+            <version>2.2.7.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>

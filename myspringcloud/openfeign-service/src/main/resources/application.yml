@@ -1,0 +1,29 @@
+
+spring:
+  cloud:
+    sentinel:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: ${spring.application.name}-sentinel
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+#使用Nacos存储规则
+          #默认情况下，当我们在Sentinel控制台中配置规则时，控制台推送规则方式是通过API将规则推送至客户端并直接更新到内存中。
+          #一旦我们重启应用，规则将消失。下面我们介绍下如何将配置规则进行持久化，以存储到Nacos为例。
+          #[
+          #    {
+          #        "resource": "/rateLimit/byUrl",
+          #        "limitApp": "default",
+          #        "grade": 1,
+          #        "count": 1,
+          #        "strategy": 0,
+          #        "controlBehavior": 0,
+          #        "clusterMode": false
+          #    }
+          #]
+feign:
+  sentinel:
+    enabled: true #打开sentinel对feign的支持
