@@ -35,10 +35,10 @@ public class RPCServer {
     public static void main(String[] args) {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workGroup = new NioEventLoopGroup();
-        LoggingHandler loggingHandler = new LoggingHandler(LogLevel.DEBUG);
-        MessageCodecSharable messageCodecSharable = new MessageCodecSharable();
+        final LoggingHandler loggingHandler = new LoggingHandler(LogLevel.DEBUG);
+        final MessageCodecSharable messageCodecSharable = new MessageCodecSharable();
         MessageCodec messageCodec = new MessageCodec();
-        RpcRequestMessageHandler rpcRequestMessageHandler=new RpcRequestMessageHandler();
+        final RpcRequestMessageHandler rpcRequestMessageHandler=new RpcRequestMessageHandler();
 
         ServerBootstrap server = new ServerBootstrap()
                 .group(bossGroup,workGroup)

@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /spring #配置项目的访问路径
+  port: 8081 #配置端口号

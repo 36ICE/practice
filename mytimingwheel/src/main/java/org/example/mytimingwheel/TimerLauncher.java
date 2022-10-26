@@ -45,6 +45,7 @@ public class TimerLauncher implements Timer {
 
 
     public void addTimerTaskEntry(TimerTaskEntry entry) {
+        //是否需要降级处理
         if (!timeWheel.add(entry)) {
             // 任务已到期
             TimerTask timerTask = entry.getTimerTask();
