@@ -24,6 +24,7 @@
         <module>myelasticsearch</module>
         <module>mytimingwheel</module>
         <module>myspringcloud</module>
+        <module>mymybatis</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
