@@ -17,6 +17,7 @@ public class SPIClassLoaderTest {
         //8时为启动类加载器，11为平台类加载器
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/xxl_job",USER,PASS);
 
+
         PreparedStatement preparedStatement = connection.prepareStatement("select * from xxl_job_log");
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()) {
