@@ -17,6 +17,7 @@
         <module>myattach</module>
         <module>mymq</module>
         <module>mylock</module>
+        <module>myclassloader</module>
     </modules>
     <dependencies>
         <dependency>
