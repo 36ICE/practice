@@ -25,6 +25,7 @@
         <module>mytimingwheel</module>
         <module>myspringcloud</module>
         <module>mymybatis</module>
+        <module>myjavasql</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
