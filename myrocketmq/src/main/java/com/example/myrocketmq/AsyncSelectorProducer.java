@@ -9,7 +9,7 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-public class AsyncProducer {
+public class AsyncSelectorProducer {
 
     public static final int MESSAGE_COUNT = 1000;
     public static final String PRODUCER_GROUP = "group_test";

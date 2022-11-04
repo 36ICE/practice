@@ -18,6 +18,7 @@
         <module>mymq</module>
         <module>mylock</module>
         <module>myclassloader</module>
+        <module>myqueue</module>
     </modules>
     <dependencies>
         <dependency>

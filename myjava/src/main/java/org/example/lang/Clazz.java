@@ -1,7 +1,5 @@
 package org.example.lang;
 
-import jdk.internal.misc.SharedSecrets;
-
 public class Clazz {
 
 
@@ -9,7 +7,8 @@ public class Clazz {
         //不能直接访问
 //        Clazz.class.getCon
 
-        System.out.println(SharedSecrets.getJavaLangAccess());
+        //需要--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED
+//        System.out.println(SharedSecrets.getJavaLangAccess());
 
 
     }

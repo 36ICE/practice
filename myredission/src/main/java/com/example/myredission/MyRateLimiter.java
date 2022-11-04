@@ -15,9 +15,15 @@ public class MyRateLimiter {
         // 1、 声明一个限流器
         RRateLimiter rRateLimiter= redissonClient.getRateLimiter("ratelimiter");
         // 2、 设置速率，5秒中产生3个令牌
-        rRateLimiter.trySetRate(RateType.OVERALL, 3, 5, RateIntervalUnit.SECONDS);
+        rRateLimiter.trySetRate(RateType.OVERALL, 3, 3, RateIntervalUnit.SECONDS);
 
         // 3、试图获取一个令牌，获取到返回true
-        rRateLimiter.tryAcquire(1);
+        rRateLimiter.acquire(1);
+//        rRateLimiter.tryAcquire(1);
+//        rRateLimiter.tryAcquire(1);
+//        rRateLimiter.trySetRate(RateType.OVERALL, 3, 6, RateIntervalUnit.SECONDS);
+//        rRateLimiter.tryAcquire(1);
+//        rRateLimiter.tryAcquire(1);
+//        rRateLimiter.tryAcquire(1);
     }
 }
