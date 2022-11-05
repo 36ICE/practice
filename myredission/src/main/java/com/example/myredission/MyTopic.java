@@ -36,7 +36,7 @@ public class MyTopic {
     }
 
     @Test
-    public void testConsumer(){
+    public void testConsumer() throws Exception {
         RTopic topic=redisson.getTopic("topic1");
         topic.addListener(Integer.class,new MessageListener<Integer>() {
             @Override
@@ -45,5 +45,13 @@ public class MyTopic {
             }
         });
 
+
+        try {
+
+        }catch (Exception e){
+            throw new Exception();
+        }finally {
+
+        }
     }
 }

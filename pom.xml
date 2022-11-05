@@ -26,6 +26,7 @@
         <module>myspringcloud</module>
         <module>mymybatis</module>
         <module>myjavasql</module>
+        <module>mycoder</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
