@@ -1,4 +1,4 @@
-package hw.code;
+package h.code;
 
 import java.util.Arrays;
 import java.util.Scanner;
