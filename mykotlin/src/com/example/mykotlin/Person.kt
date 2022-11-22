@@ -2,6 +2,9 @@ package com.example.mykotlin
 
 import java.util.*
 
+
+//如果类有主构造函数，每个次构造函数都要，或直接或间接通过另一个次构造函数代理主构造函数。
+// 在同一个类中代理另一个构造函数使用 this 关键字：
 class Person {
 
     //getter 和 setter
