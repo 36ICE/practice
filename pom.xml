@@ -27,6 +27,7 @@
         <module>mymybatis</module>
         <module>myjavasql</module>
         <module>mycoder</module>
+        <module>myrabbitmq</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
