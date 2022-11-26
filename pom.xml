@@ -28,6 +28,7 @@
         <module>myjavasql</module>
         <module>mycoder</module>
         <module>myrabbitmq</module>
+        <module>myopenfeign</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
