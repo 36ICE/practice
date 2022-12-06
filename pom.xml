@@ -29,6 +29,7 @@
         <module>mycoder</module>
         <module>myrabbitmq</module>
         <module>myopenfeign</module>
+        <module>compaireDemo</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
