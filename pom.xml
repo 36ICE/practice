@@ -30,6 +30,7 @@
         <module>myrabbitmq</module>
         <module>myopenfeign</module>
         <module>compaireDemo</module>
+        <module>mydroolsflowable</module>
     </modules>
     <dependencies>
 <!--        <dependency>-->
