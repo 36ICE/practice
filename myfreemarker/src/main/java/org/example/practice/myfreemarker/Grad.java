@@ -2,7 +2,6 @@ package org.example.practice.myfreemarker;
 
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Grad {
     public Grad(String id, String code,String sxw, String value) {
@@ -49,16 +48,7 @@ public class Grad {
         return value;
     }
 
-    public void setValue(String value) {
-        this.value = value;
-    }
+    ArrayList<Grad> grads = new ArrayList<>();
 
-    public static List<Grad> getList(){
-        ArrayList<Grad> grads = new ArrayList<>();
-        grads.add(new Grad("999990006","JIJING","C_INSTANCE_","1"));
-        grads.add(new Grad("999990006001","JIJING","C_INSTANCE_","2"));
-        grads.add(new Grad("999990006002","JIJING","C_INSTANCE_","3"));
-        return grads;
-    }
 
 }

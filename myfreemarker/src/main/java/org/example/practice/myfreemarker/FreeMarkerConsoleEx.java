@@ -24,7 +24,7 @@ public class FreeMarkerConsoleEx {
 
         Template template = cfg.getTemplate("test.ftl");
 
-        List<String> list =new ArrayList<>();
+        List<String> list = new ArrayList<>();
         list.add("1%");
         list.add("2%");
         list.add("3%");
@@ -39,8 +39,8 @@ public class FreeMarkerConsoleEx {
         cars.add(c3);
         Map<String, Object> templateData = new HashMap<>();
         templateData.put("msg", "Today is a beautiful day");
-        templateData.put("list",list);
-        templateData.put("cars",cars);
+        templateData.put("list", list);
+        templateData.put("cars", cars);
         try (StringWriter out = new StringWriter()) {
 
             template.process(templateData, out);
